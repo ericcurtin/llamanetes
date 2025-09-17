@@ -8,8 +8,8 @@ Provides LEGO-like bricks that can be combined to create complex AI workflows.
 __version__ = "0.1.0"
 __author__ = "Eric Curtin"
 
-from .core import LlamaBrick, ModelBrick, GenerationBrick, TokenizationBrick
-from .chains import ChainBuilder
+from .core import LlamaBrick, ModelBrick, GenerationBrick, TokenizationBrick, ConfigBrick
+from .chains import ChainBuilder, Pipeline, ParallelChain
 from .cli import main
 
 __all__ = [
@@ -17,6 +17,9 @@ __all__ = [
     "ModelBrick", 
     "GenerationBrick",
     "TokenizationBrick",
+    "ConfigBrick",
     "ChainBuilder",
+    "Pipeline",
+    "ParallelChain",
     "main"
 ]
