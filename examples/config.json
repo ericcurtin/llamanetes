@@ -1,0 +1,14 @@
+{
+  "model_path": "/path/to/your/model.gguf",
+  "server_port": 8080,
+  "generation": {
+    "max_tokens": 100,
+    "temperature": 0.8,
+    "top_p": 0.9,
+    "top_k": 40
+  },
+  "tokenization": {
+    "show_tokens": false,
+    "count_only": true
+  }
+}

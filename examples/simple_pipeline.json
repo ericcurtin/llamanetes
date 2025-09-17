@@ -1,0 +1,22 @@
+{
+  "name": "SimpleGenerationPipeline",
+  "description": "A basic pipeline for text generation",
+  "bricks": [
+    {
+      "type": "model",
+      "params": {
+        "model_path": "/path/to/your/model.gguf",
+        "port": 8080
+      }
+    },
+    {
+      "type": "generation",
+      "params": {
+        "max_tokens": 100,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "top_k": 40
+      }
+    }
+  ]
+}
